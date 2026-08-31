@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cloud & DevOps Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary-color: #38bdf8;
+            --text-color: #f8fafc;
+            --text-secondary: #94a3b8;
+            --accent: #0284c7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 2rem auto;
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            border-bottom: 2px solid #334155;
+            padding-bottom: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header h1 {
+            color: var(--primary-color);
+            margin: 0 0 0.5rem 0;
+            font-size: 2.2rem;
+        }
+
+        .header p {
+            color: var(--text-secondary);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #334155;
+            color: #e2e8f0;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .project-card {
+            background: #0f172a;
+            padding: 1.2rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            margin-top: 10px;
+        }
+
+        .project-card h3 {
+            margin: 0 0 0.5rem 0;
+            color: #f1f5f9;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #334155;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cloud & DevOps Engineer</h1>
+            <p>AWS | Infrastructure as Code | Automation</p>
+        </div>
+
+        <div class="section">
+            <h2>💡 About Me</h2>
+            <p style="color: var(--text-secondary); line-height: 1.6;">
+                熱衷於雲端架構設計與自動化部署。專注於使用 Terraform 實現 IaC (Infrastructure as Code)，結合 AWS 雲端服務打造安全、高效且具備彈性的現代化架構。
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>🛠️ Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">AWS (S3, CloudFront, IAM)</span>
+                <span class="skill-tag">Terraform (IaC)</span>
+                <span class="skill-tag">AWS CLI & Bash</span>
+                <span class="skill-tag">Git / GitHub</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Highlighted Projects</h2>
+            <div class="project-card">
+                <h3>Automated Cloud Portfolio Deployment</h3>
+                <p>使用 Terraform (IaC) 自動化建置 AWS S3 與 CloudFront CDN 全球分發網絡，並設定 Origin Access Control (OAC) 強化安全架構，實現全自動 HTTPS 靜態網站託管。</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Deployed automatically via Terraform & AWS CloudFront</p>
+        </div>
+    </div>
+</body>
+</html>
